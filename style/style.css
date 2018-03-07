@@ -1,0 +1,366 @@
+/*
+COLOR DEFS_______________________________
+light-blue      #20A7D8 
+red             #c12b24
+_________________________________________
+*/
+
+/* =============== ELEMENTY ================= */
+
+body {
+    background: #eee;
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+a {
+    color: #20A7D8;
+}
+a:hover {
+    color: #c12b24;
+}
+
+h1 {    
+    font-family: 'Armata', sans-serif;
+    font-weight: normal;
+    color: #c12b24;
+    font-size: 4rem;
+    position: relative; /*kvoli vnorenym... */
+    /*border: 1px red solid;*/
+    border-right: 5px #20A7D8 solid;
+    margin-right: -5px;
+    margin-top: 10px;
+}
+
+.homepage h1 {    
+    font-size: 3rem;
+    border: none;
+}
+
+h2 {
+    color: #20A7D8;
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Armata', sans-serif;
+    position: relative; /*kvoli vnorenym... */
+    border-right: 5px #c12b24 solid;
+    margin-right: -5px;
+/*
+    padding-top: 15px;
+*/
+}
+
+h3 {
+    color: #444;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Armata', sans-serif;
+}
+
+p {
+    line-height: 130%;
+}
+
+/* =============== KOSTRA ================= */
+
+.bg-left {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50%;
+    margin-left: -250px;
+    height: 100%;
+    /*border: 1px green solid;*/
+    z-index: -1;
+}
+
+.bg-dark {
+    background: #222;
+}
+
+.header-placeholder {
+    padding-top: 40px;
+}
+
+.wrapper {
+/*
+    min-height: 500px;
+*/
+    margin: 0px auto;
+    width: 950px;
+    position: relative;
+}
+
+.wrapper-slim {
+    margin: 0px auto;
+    width: 924px; /* 452*2 + 20 */
+    position: relative;
+}
+
+#header {
+    /*border: 1px blue solid;*/
+    padding: 10px 0;
+    text-align: left;
+    position: fixed; 
+    /*top: 24px; /* kvoli liste IC */
+    width: 100%; 
+    z-index: 100;
+}
+
+#header a {
+    font-family: 'Armata', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    background: url('home.png') no-repeat;
+    padding: 2px 0px 2px 30px;
+}
+
+.left {
+    width: 452px; /* 450 + border */
+    /*min-height: 500px;*/
+    /*border: 1px orange solid;*/
+    float: left;
+}
+
+.right {
+    width: 452px; /* 450 + border */
+/*
+    min-height: 700px;
+*/
+    /*border: 1px orange solid;*/
+    float: right;
+    position: relative; /*kvoli vnorenym... */
+}
+
+.b-left {
+    width: 202px; /* 450 + border */
+    /*min-height: 500px;*/
+    /*border: 1px orange solid;*/
+    float: left;
+}
+
+.b-right {
+    width: 702px; /* 450 + border */
+/*
+    min-height: 700px;
+*/
+    /*border: 1px orange solid;*/
+    float: right;
+    position: relative; /*kvoli vnorenym... */
+}
+
+.clear {
+    clear: both;
+    height: 1px;
+}
+
+#footer {   
+    /*height: 50px;*/
+    /*border: 1px blue solid;*/
+    padding: 60px 0 20px;
+    clear: right;
+    text-align: right;
+    color: #777;
+    font-size: 0.8rem;
+    font-family: 'Armata', sans-serif;
+}
+#footer p {
+    margin: 0px;
+}
+
+/* =============== SPECIALNE ================= */
+
+/* menu linky */
+
+.big_link {
+    display: block;
+    opacity: 0.8;
+    /*position: relative; /*kvoli vnorenym...*/
+    /*height: 167px;*/
+    border: 1px #20A7D8 solid;
+    border-radius: 4px;
+    margin: 20px 0;
+    overflow: hidden;
+    width: 450px;
+    /*vertical-align: bottom;*/
+    text-decoration: none;
+}
+
+.subpage .big_link {
+    width: 200px;
+}
+
+.big_link img {
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.big_link span {
+    display: block;
+    /*border: 1px orange solid;*/
+    background: black;
+    border-radius: 0px 0px 4px 4px;
+    font-family: 'Armata', sans-serif;
+    margin-top: -80px;
+    height: 40px;
+    color: white;
+    padding: 5px 10px 35px;
+    font-size: 1.8rem;
+    opacity: 0.7;
+}
+
+.subpage .big_link span {
+    font-size: 1rem;
+}
+
+.big_link:hover {
+    /*background-color: rgb(50,250,50);*/
+    opacity: 1;
+    box-shadow: 0 0 10px #20A7D8;
+}
+.big_link:hover span, .subpage .big_link span {
+    padding-bottom: 5px;
+    margin-top: -50px; 
+}
+.big_link:hover span {
+    opacity: 0.95;
+}
+
+
+/* galeria */
+
+table.thumbs {
+    background: #eee;
+    border-spacing: 1px;
+    /*border-collapse: collapse;*/
+}
+table.thumbs td {
+    /*border: 1px orange solid;*/
+    padding: 0px;
+    border: none;
+    width: 231px;
+    /*padding: 10px;*/
+}
+table.thumbs a {
+    display: block;
+}
+table.thumbs a:hover {
+    opacity: 0.9;
+}
+table.thumbs img {
+    display: block;
+}
+.thumb1 img {
+    width: 231px;
+}
+.thumb2 img {
+    width: 463px;
+}
+.thumb3 img {
+    width: 695px;
+}
+
+/* download */
+
+div.download_box {
+    background: #20A7D8;
+    padding: 10px 10px;
+    margin: 15px 0;
+    position: relative; /*kvoli vnorenej licencii a abs. pozicovaniu*/
+    border-radius: 4px;
+    font-family: 'Armata', sans-serif;
+}
+div.download_box a:link {
+    color: black;
+}
+div.download_box a:hover {
+    color: #c12b24;
+}
+div.download_box a.license {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+div.download_box a.download {
+    background: #c12b24;
+    border-radius: 3px;
+    padding: 5px 10px;
+    width: 90px;
+    overflow: hidden;
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    text-decoration: none;
+}
+div.download_box div.info {
+    margin-left: 120px;
+    font-size: 90%;
+    color: black;
+}
+
+
+/* dalsie */
+
+p.error {
+    background: #c12b24; /*#D83129*/;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+img.icon {
+    vertical-align: middle;
+    border-right: 1px #889686 solid;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/*
+.tech_info {
+    color: #333;
+    font-family: 'Armata', sans-serif;
+}
+*/
+
+img.alone {
+    border-radius: 8px;
+}
+
+div.delimiter {
+    position: relative; /*kvoli vnorenym...*/
+}
+
+div.date {
+    font-family: 'Armata', sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+    position: absolute;
+    right: -60px;
+    width: 50px; /* sirka je tu, aby: 1. zalomila datum, 2. vedel som vypocitat right: */
+/*
+    border: 1px red solid;
+*/
+}
+div.date-h1 {
+    color: #20A7D8;
+    top: 10px;
+}
+div.date-h2 {
+    color: #c12b24;
+    top: -3px;
+}
